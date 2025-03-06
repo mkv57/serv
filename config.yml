@@ -1,0 +1,3 @@
+dsnHTTP: "localhost:8086"
+dsn: "postgres://konstantin:mkv123@localhost:5437/books_db?sslmode=disable"
+log_level: -4
