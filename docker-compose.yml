@@ -1,0 +1,17 @@
+services:
+
+ postgres_2:
+  container_name: booksU
+  image: postgres:16.1
+  ports:
+   - "5437:5432"
+  environment:
+   POSTGRES_USER: konstantin
+   POSTGRES_PASSWORD: mkv123
+   POSTGRES_DB: books_db
+  volumes:
+   - postgres_2-data:/var/lib/postgresql/data
+  restart: always
+volumes:
+   postgres_2-data:
+  
